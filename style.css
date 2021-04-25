@@ -26,6 +26,14 @@
     color: seagreen;
 }
 
+#countryMoreInfo{
+    text-align: center;
+    color: seagreen;
+    border: 2px solid goldenrod;
+    width: 500px;
+    margin: 0 auto;
+}
 #countryMoreInfo img{
-    width: 300px;
+    width: 200px;
+    margin: 5px 0px 50px 5px;
 }

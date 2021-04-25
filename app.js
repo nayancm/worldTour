@@ -12,7 +12,8 @@ const displayCountries = countries => {
         const nameAndCapitalInfo = `
         <h2 id="countryId">Country: ${country.name}</h2>
         <h3 id="capitalId">Capital: ${country.capital}</h3>
-        <button id="countryDetail" onclick="showMoreInfo('${country.name}')">Details...</button>
+        <button id="countryDetail" onclick="showMoreInfo('${country.name}')">Detail</button>
+        <button><a href="#top">Top</a></button>
         `
         nameAndCapitalDiv.innerHTML = nameAndCapitalInfo;
         countryInfo.appendChild(nameAndCapitalDiv);
