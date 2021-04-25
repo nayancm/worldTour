@@ -6,16 +6,14 @@ const displayCountries = countries => {
     const countryInfo = document.getElementById('countryInfoContainer')
 
     countries.forEach(country => {
-        const nameAndCapital = document.createElement("div");
-        const h3 = document.createElement("h3");
-        const p = document.createElement("p");
+        const nameAndCapitalDiv = document.createElement("div");
+        nameAndCapitalDiv.className = "nameAndCapitalClass";
 
-        h3.innerText = country.name;
-        p.innerText = country.capital;
-
-        nameAndCapital.appendChild(h3);
-        nameAndCapital.appendChild(p);
-
-        countryInfo.appendChild(nameAndCapital);
+        const nameAndCapitalInfo = `
+        <h2 id="countryId">Country: ${country.name}</h2>
+        <h3 id="capitalId">Capital: ${country.capital}</h3>
+        `
+        nameAndCapitalDiv.innerHTML = nameAndCapitalInfo;
+        countryInfo.appendChild(nameAndCapitalDiv);
     });
 }

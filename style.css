@@ -1,8 +1,27 @@
-h1{
-    color: red;
+#countryInfoContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }
 
-li{
-    color: green;
-    list-style: decimal;
+.nameAndCapitalClass{
+    border: 1px solid coral;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nameAndCapitalClass:hover{
+    background-color: rgb(231, 250, 195);
+    transition: background-color 1.5s;
+}
+
+#countryId{
+    color: lightseagreen;
+}
+
+#capitalId{
+    color: seagreen;
 }
